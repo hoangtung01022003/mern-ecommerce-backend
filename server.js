@@ -23,7 +23,7 @@ const __dirname = path.resolve();
 
 // Cấu hình CORS cho phép truy cập từ frontend
 app.use(cors({
-  origin: "process.env.CLIENT_URL", // Cho phép từ domain frontend của bạn
+  origin: process.env.CLIENT_URL, // Cho phép từ domain frontend của bạn
   methods: "GET,POST,PUT,DELETE,OPTIONS",
   credentials: true
 }));
